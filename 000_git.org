@@ -1,0 +1,78 @@
+#+title: Git
+
+* What is Git?
+
+From the official website
+
+ Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+
+* Getting Started with Git
+
+Install git first. To initiate a empty git repository
+
+#+begin_src emacs-lisp
+
+mkdir your_repo_name && cd your_repo_name
+
+git init
+
+#+end_src
+
+
+ A git project can be thought of as having three parts:
+- A Working Directory: where you’ll be doing all the work: creating, editing, deleting and organizing files
+- A Staging Area: where you’ll list changes you make to the working directory
+- A Repository: where Git permanently stores those changes as different versions of the project
+
+The Git workflow consists of editing files in the working directory, addin g files to the staging area, and saving changes to a Git repository. In Git, we save changes with a commit, which we will learn more about in this lesson.
+
+*** Status
+
+Below command will give the status of the repository
+
+#+begin_src emacs-lisp
+
+git status
+
+#+end_src
+
+*** Add
+
+To add the files in the Staging area run below command
+
+#+begin_src
+
+git add filename/s
+
+#+end_src
+
+*** Diff
+
+Its good practice to see the difference between the file in working directory in repo and the file in staging area
+
+#+begin_src
+
+git diff filename
+
+#+end_src
+
+*** Commit
+
+A commit is the last step in our Git workflow.
+
+The commit command is used to save changes to a local repository after staging in Git. However, before you can save changes in Git,
+you have to tell Git which changes you want to save as you might have made tons of edits.
+A great way to do that is by adding a commit message to identify your changes.With git commit we need to write a logical, well written commit message, so that the other user/developer can understand the changes
+that we are doing are for what and why it was needed.
+
+Please see below link to why we need to write good commit message
+
+[[https://github.com/erlang/otp/wiki/writing-good-commit-messages][Commit Message]]
+
+#+begin_src emacs-lisp
+
+git commit -m "we should always write good commit messages"
+
+#+end_src
