@@ -87,6 +87,14 @@ git log
 
 #+end_src
 
+BTW just in case if you want to see just one liner log
+
+#+begin_src emacs-lisp
+
+git log --oneline
+
+#+end_src
+
 The output of above command will be
 
  - git commit id which is 40 char long SHA unique string
@@ -113,3 +121,5 @@ Usually to revert the commit from the Staging area to working directory we use c
 git checkout HEAD filename
 
 #+end_src
+
+*** Reset
