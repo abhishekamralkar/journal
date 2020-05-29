@@ -40,7 +40,7 @@ git status
 
 *** Add
 
-To add the files in the Staging area run below command
+To add the files in the Staging area run below command. We can also add multiple files in staging area.
 
 #+begin_src
 
@@ -74,5 +74,42 @@ Please see below link to why we need to write good commit message
 #+begin_src emacs-lisp
 
 git commit -m "we should always write good commit messages"
+
+#+end_src
+
+*** Logs
+
+With git log we can see the previos commits by all the git repo commiters. Git logs are stored in chronologically in the repository.
+
+#+begin_src emacs-lisp
+
+git log
+
+#+end_src
+
+The output of above command will be
+
+ - git commit id which is 40 char long SHA unique string
+ - git commit author
+ - date and time
+ - git message
+
+*** Head
+
+The current commit you are on in your local repository is called as HEAD commit. The below comand gives the details.
+
+#+begin_src emacs-lisp
+
+git show HEAD
+
+#+end_src
+
+*** Checkout
+
+Usually to revert the commit from the Staging area to working directory we use checkout
+
+#+begin_src emacs-lisp
+
+git checkout HEAD filename
 
 #+end_src

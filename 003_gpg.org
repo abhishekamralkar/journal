@@ -1,0 +1,61 @@
+#+title: What is PGP Exactly?
+
+In short, it is a data encryption and decryption program. It is used to provide you with cryptographic privacy and authentication for data communication and transaction authentication.
+You can use it to sign, encrypt and decrypt text messages, emails, files and directories, online transactions or entire disk partitions.
+It was created in 1991 by Phil Zimmerman and follows the OpenPGP standard RFC 4880 for the encryption and decryption of data. PGP can protect your transactions and data by using a combination of data compression, hashes, public-key and symmetric-key cryptography in multiple steps. Each public key is then bound to a username (or email address), which is provided to other services or individuals to authenticate the transaction or message as being from whom it is claimed to be.
+
+
+*** PGP Keys
+
+Today, we are going to concentrate on installing what is needed to generate our PGP keys. We are using an Ubuntu 16.04 LTS system to do so, but other than the package manager being used (apt-get vs. yum, for example), the packages, libraries, and process of generating the keys are the same across all modern distributions. So first, we need to install what we need. We are going to use the ‘GnuPG’ package and then the ‘Gnu Privacy Assistant’ (GPA) GUI to generate and work with our keys. Installation is very straightforward and can be accomplished like so:
+
+[[https://www.gnupg.org/download/][To Download PGP]]
+
+
+To list the any existing PGP key
+
+#+begin_src emacs-lisp
+
+gpg --list-keys
+
+#+end_src
+
+To generate PGP Keys
+
+#+begin_src emacs-lisp
+
+gpg --default-new-key-algo rsa4096 --gen-key
+
+#+end_src
+
+To list the secret keys
+
+#+begin_src emacs-lisp
+
+gpg --list-secret-keys --keyid-format LONG
+
+#+end_src
+
+To print the GPG key ID, in ASCII armor format
+
+#+begin_src
+
+gpg --armor --export 3AA5C34371567BD2
+
+#+end_src
+
+To dele the PGP key, first private key needs to be deleted
+
+#+begin_src emacs-lisp
+
+gpg --delete-secret-key key-ID
+
+#+end_src
+
+After that, you can delete the public key:
+
+#+begin_src emacs-lisp
+
+gpg --delete-key key-ID
+
+#+end_src
