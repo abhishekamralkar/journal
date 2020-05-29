@@ -44,7 +44,7 @@ gpg --armor --export 3AA5C34371567BD2
 
 #+end_src
 
-To dele the PGP key, first private key needs to be deleted
+To delete the PGP key, first private key needs to be deleted
 
 #+begin_src emacs-lisp
 
