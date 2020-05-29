@@ -1,4 +1,6 @@
 #+title: Git
+#+author: Abhishek Amralkar
+#+date: 29-May-2020
 
 * What is Git?
 
@@ -114,7 +116,8 @@ git show HEAD
 
 *** Checkout
 
-Usually to revert the commit from the Staging area to working directory we use checkout
+Usually to revert the commit from the Staging area to working directory we use checkout. Checkout is also use to switch between
+the various git branches.
 
 #+begin_src emacs-lisp
 
@@ -123,3 +126,73 @@ git checkout HEAD filename
 #+end_src
 
 *** Reset
+
+This command will reset the local repository in previous stage like if you had earlier and may remove all the file you added after that
+commit.
+
+#+begin_src emacs-lisp
+
+git checkout HEAD filename
+
+#+end_src
+
+We can also do reset from commit too by using the SHA commit id first 7 character
+
+#+begin_src emacs-lisp
+
+git reset aaf9084d5432a09751a9a21acbb70224fe6126de
+
+#+end_src
+
+*** Branch
+
+By default git creates a master branch and its not a good idea to use the git branch as the working branch. rather we can create our
+own branch and work in it and later we can raise a review request and get the branch merge in master branch.
+
+To chec the bracnhes for the repositoy
+
+#+begin_src
+
+git branch
+
+#+end_src
+
+usually when we create new branch we always take a base branch which means suppose if we are in master branch and we create our
+branch the new brach will have all the files which master branch have exact replica of our master branch at time of our branch creation.
+
+To create a new branch
+
+#+begin_src emacs-lisp
+
+git brach  branchname
+
+#+end_src
+
+To switch to the branch
+
+#+begin_src emacs-lips
+
+git checkout branchname
+
+#+end_src
+
+One liner to create a branch and switch
+
+#+begin_src
+
+git branch -b branchname
+
+#+end_src
+
+Use `git branch` to verify which branch you are in. For current branch Git use `*`.
+
+
+*** Merge
+
+To merge the changes from some other branch to thr source of truth branch usually master
+
+#+begin_src emacs-lisp
+
+git merge
+
+#+end_src
