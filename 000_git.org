@@ -193,6 +193,53 @@ To merge the changes from some other branch to thr source of truth branch usuall
 
 #+begin_src emacs-lisp
 
-git merge
+git merge branchname
+
+#+end_src
+
+Make sure the master branch is clean before merging which means all the changes in master branch should be commited else
+`git merge` will throw merge conflict error
+
+To resolve the git merge conflict error opent the conflicted file and remove the git markings and add it in stage area and commit to master.
+
+To delete the branch
+
+#+begin_src emacs-lisp
+
+git branch -d branchname
+
+#+end_src
+
+*** Clone
+
+When we want to make a copy of the another repository. We can clone any remote repository if we have access. Remote repositories
+can be Public which means full access to clone code is not proprietory and Private where code is secret and not accessible to all.
+
+Remote repository can exist on GitHub, BitBucket, GitLab and many more or on local file path.
+
+#+begin_src emacs-lisp
+
+git clone remore repositorypath
+
+#+end_src
+
+*** Fetch
+
+To update your remote-tracking branches under refs/remotes/<remote>/. It will not integrates the changes into your local repository. Its harmless.
+This command will not merge changes from the remote into your local repository. It brings those changes onto what’s called a remote branch.
+
+#+begin_src emacs-lisp
+
+git fetch
+
+#+end_src
+
+*** Cherrypick
+
+Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+
+#+begin_src emacs-lisp
+
+git cherry-pick commit-id
 
 #+end_src
