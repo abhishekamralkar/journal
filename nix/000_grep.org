@@ -1,0 +1,27 @@
+#+title: GREP
+
+Grep command in Unix/Linux is the short form of 'global search for the regular expression'. The grep command is a filter that is used to search for lines matching a specified pattern and print the matching lines to standard output.
+
+*** Search a pattern in a file
+
+#+BEGIN_SRC
+grep name filename.txt
+#+END_SRC
+
+*** Search a pattern in a multiple file
+
+#+BEGIN_SRC
+grep name filename1.txt filename2.txt
+#+END_SRC
+
+*** Search case insensitive
+
+#+BEGIN_SRC
+grep -i name filename.txt
+#+END_SRC
+
+*** Search recursively
+
+#+BEGIN_SRC
+grep -r name /home/aaa
+#+END_SRC
