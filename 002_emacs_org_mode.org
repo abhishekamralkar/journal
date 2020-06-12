@@ -1,1 +1,7 @@
-#+ Title: Org Mode
+#+ title: Org Mode
+
+*  Command to create a begin_src block
+
+#+BEGIN_SRC
+<s + TAB
+#+END_SRC
