@@ -1,0 +1,14 @@
+#+title: Conversion
+
+
+* Memory
+
+
+|Units   | Bytes |
+|---+---|
+|1 G (Gigabyte) | 1,000,000,000 bytes |
+|1 M (Megabyte) | 1,000,000 bytes |
+|1 K (Kilobyte) | 1,000 bytes |
+|1 Gi (Gibibyte) | 1,073,741,824 bytes |
+|1 Mi (Mebibyte) | 1,048,576 bytes |
+|1 Ki (Kibibyte)| 1,024 bytes|
