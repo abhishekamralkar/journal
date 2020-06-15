@@ -5,3 +5,12 @@
 #+BEGIN_SRC
 <s + TAB
 #+END_SRC
+
+* Create a table
+
+The easiest way to create a table is to directly type the "|" character at the beginning of a line, or after any amount of white space. This will put you in the first field of an atomic table.
+
+You can also create a table from scratch with
+#+BEGIN_SRC
+C-c |
+#+END_SRC
