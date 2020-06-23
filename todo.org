@@ -4,3 +4,6 @@
    :LOGBOOK:
    - State "DONE"       from "TODO"       [2020-06-23 Tue 20:32]
    :END:
+** TODO Write Python Code
+** TODO Write Blog
+** TODO Read about the Shell Scripting

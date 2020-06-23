@@ -2,15 +2,41 @@
 
 *  Command to create a begin_src block
 
-#+BEGIN_SRC
-<s + TAB
-#+END_SRC
+  #+BEGIN_SRC
+  <s + TAB
+  #+END_SRC
 
 * Create a table
 
 The easiest way to create a table is to directly type the "|" character at the beginning of a line, or after any amount of white space. This will put you in the first field of an atomic table.
 
 You can also create a table from scratch with
-#+BEGIN_SRC
-C-c |
-#+END_SRC
+
+  #+BEGIN_SRC
+  C-c |
+  #+END_SRC
+
+* Short Cut for the TODO
+
+  #+BEGIN_SRC
+  M-shift-RET to call org-insert-todo-heading
+  #+END_SRC
+
+* TODO item DONE
+
+ #+BEGIN_SRC
+ C-c C-t
+ #+END_SRC
+
+* To add a link
+
+  #+BEGIN_SRC
+  [[Link][Name]]
+  #+END_SRC
+
+
+* To Open the link
+
+  #+BEGIN_SRC
+  C-c C-o
+  #+END_SRC
