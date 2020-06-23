@@ -1,0 +1,4 @@
+#+title: IP Addresses
+
+Here we will be mostly talking about the IP-v4. IP-v4 is series of 4 three digit numbers separated by periods (192.168.1.1).
+Each of the 3 digit numbers must be between 0 - 255

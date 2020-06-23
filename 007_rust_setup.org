@@ -1,0 +1,8 @@
+-*- mode: cargo-process; default-directory: "~/Code/Rust/guessing_game/" -*-
+Cargo-Process started at Thu Jun 18 15:31:02
+
+/home/aaa/.cargo/bin/cargo run --manifest-path /home/aaa/Code/Rust/guessing_game/Cargo.toml 
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/guessing_game`
+Guess the number!
+Please input your guess.
