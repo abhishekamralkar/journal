@@ -40,3 +40,9 @@ You can also create a table from scratch with
   #+BEGIN_SRC
   C-c C-o
   #+END_SRC
+
+* Schedule a task in Org Mode
+
+#+BEGIN_SRC
+C-c C-s
+#+END_SRC

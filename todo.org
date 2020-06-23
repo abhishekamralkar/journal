@@ -5,5 +5,8 @@
    - State "DONE"       from "TODO"       [2020-06-23 Tue 20:32]
    :END:
 ** TODO Write Python Code
+   SCHEDULED: <2020-06-24 Wed>
 ** TODO Write Blog
+   SCHEDULED: <2020-06-24 Wed>
 ** TODO Read about the Shell Scripting
+   SCHEDULED: <2020-06-24 Wed>
