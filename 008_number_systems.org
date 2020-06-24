@@ -1,0 +1,43 @@
+#+title: Number Systems
+
+Number Systems is a way of expressing a numbers.
+
+
+Types of Number System
+
+There are various types of the number system in mathematics. The four most common number system types are:
+
+*** Decimal number system (Base- 10)
+*** Binary number system (Base- 2)
+*** Octal number system (Base-8)
+*** Hexadecimal number system (Base- 16)
+
+* Decimal Number System or Base 10 Number System
+
+We humans deals in Decimal Systems mostly. Decimal Systems have base 10 because it uses digits from 0-9.
+
+Lets say number `5328` has digit 8 in a units position, digit 2 in tens position, digit 3 in hundreds position
+digit 5 in thousands position.
+
+
+|5  | 3 |2  |8  |
+|---+---+---+---+
+|thousands |hundreds | tens | units |
+|---+---+---+---+
+| 5 X 1000 | 3 X 100 | 2 X 10| 8 X 1|
+
+
+* Binary Format
+
+Base 2 which means we can go 0-1
+
+Lets say we need to conver 25 to decimal system
+
+
+* Octal Systems
+
+Base is 8. We can go from 0-7
+
+* Hexadecimal Systems
+
+Base is 16. We can go from 0-15
