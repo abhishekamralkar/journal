@@ -1,4 +1,4 @@
-#+title: Number Systems
+#+title: Number System
 
 Number Systems is a way of expressing a numbers.
 
@@ -27,12 +27,22 @@ digit 5 in thousands position.
 | 5 X 1000 | 3 X 100 | 2 X 10| 8 X 1|
 
 
-* Binary Format
+* Binary Number System or Base 2 Number System
 
-Base 2 which means we can go 0-1
+The base 2 number system is also known as the Binary number system wherein, only two binary digits exist, i.e., 0 and 1. Computers understand the binary system
 
-Lets say we need to conver 25 to decimal system
+*** Convert Decimal to Binary Number system
 
+Lets say we need to write 25 into binary number system
+
+|2 | 25| Remainder |
+|--+---+--+
+|2 | 12| 1|
+|2 | 6 | 0|
+|2 | 3 | 0 |
+|  | 1 | 1|
+
+So to read the 25 in binary number system start `11001`.
 
 * Octal Systems
 
