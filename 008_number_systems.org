@@ -3,14 +3,14 @@
 Number Systems is a way of expressing a numbers.
 
 
-Types of Number System
+** Types of Number System
 
 There are various types of the number system in mathematics. The four most common number system types are:
 
-*** Decimal number system (Base- 10)
-*** Binary number system (Base- 2)
-*** Octal number system (Base-8)
-*** Hexadecimal number system (Base- 16)
+  - Decimal number system (Base- 10)
+  -  Binary number system (Base- 2)
+  - Octal number system (Base-8)
+  - Hexadecimal number system (Base- 16)
 
 * Decimal Number System or Base 10 Number System
 
